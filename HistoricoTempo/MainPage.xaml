@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HistoricoTempo.MainPage">
+
+    <ScrollView>
+        <StackLayout Spacing="10" Margin="10">
+
+            <Label Text="Local e Tempo" 
+                   FontAttributes="Bold"
+                   FontSize="30"
+                   Padding="20"
+                   HorizontalTextAlignment="Center"/>
+
+            <Image Source="clima.png" 
+                   HeightRequest="100"
+                   WidthRequest="100" />
+
+            <Label Text="Latitude:"
+                   Padding="5"/>
+            <Entry x:Name="lbl_latitude" Text="37,4219983333333335" />
+
+            <Label Text="Longitude:" 
+                   Padding="5"/>
+            <Entry x:Name="lbl_longitude" Text="-122,084" />
+
+            <Button Text="Obter Localização" Clicked="Button_Clicked" />
+
+            <Button Text="Obter Placemark" 
+                    Clicked="Button_Clicked_1" />
+
+            <Label x:Name="lbl_reverso" Text="Dados gerais do local:"
+                   Padding="10"/>
+
+            <Button Text="Obter previsão do tempo" Clicked="Button_Clicked_1" />
+
+            <Label x:Name="lbl_previsao" />
+
+            <Image Source="sol.png"
+                   HeightRequest="50"
+                   WidthRequest="50"/>
+
+            <Label Text="Nascer e pôr do sol" 
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Text="06h - 18h05" 
+                   HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
