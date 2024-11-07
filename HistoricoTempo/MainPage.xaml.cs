@@ -16,6 +16,8 @@ namespace HistoricoTempo
             InitializeComponent();
         }
 
+        // #D8D8FA
+
         private void OnCounterClicked(object sender, EventArgs e)
         {
         }
